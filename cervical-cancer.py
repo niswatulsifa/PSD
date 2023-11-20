@@ -1,12 +1,10 @@
 import streamlit as st
-from PIL import Image
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.preprocessing import MinMaxScaler
-from streamlit_option_menu import option_menu
 import pandas as pd
 import numpy as np
-from pycaret.classification import *
 import tkinter as tk
+from streamlit_option_menu import option_menu
+from pycaret.classification import *
+from PIL import Image
 
 st.title("Cervical Cancer Behavior Risk")
 st.write('Aplikasi ini dapat digunakan untuk memprediksi apakah terkena Kanker Serviks atau tidak')
