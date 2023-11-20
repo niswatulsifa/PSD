@@ -123,18 +123,18 @@ if (selected == 'Implementasi') :
                      }
             dt = pd.DataFrame(fitur,index=[0])
             import pickle
-            with open('scaler.pkl','rb') as preprocessing:
+            with open('cervical-cancer.pkl','rb') as preprocessing:
                 skala = pickle.load(preprocessing)
             data_normalisasi = skala.transform(dt) 
             st.write('---------- Data Hasil Normalisasi ----------')
             st.write(data_normalisasi)
-            with open('PCA10.pkl','rb') as pca:
+            with open('pca_cervical-cancer.pkl','rb') as pca:
                 pca =pickle.load(pca)
             data_pca = pca.transform(data_normalisasi)
             st.write('---------- Data Hasil Ekstraksi Fitur dengan PCA ----------')
             st.write(data_pca)
-            with open('pca_knn.pkl','rb') as pcaknn :
-                knn_pca = pickle.load(pcaknn)
+            with open('pca_rf.pkl','rb') as pcarf :
+                knn_pca = pickle.load(pcarf)
             predict_pca = knn_pca.predict(data_pca)
             if predict_pca==0:
                 st.write('Anda Tidak Terdeteksi Terkena Kanker Serviks')
