@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import tkinter as tk
 from streamlit_option_menu import option_menu
 from pycaret.classification import *
 from PIL import Image
