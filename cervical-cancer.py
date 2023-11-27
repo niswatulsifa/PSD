@@ -58,15 +58,9 @@ if (selected == 'Data') :
 if (selected == 'Implementasi') :
     st.title('Deteksi Kanker Serviks')
     st.write('Untuk mengetahui terdeteksi tidaknya Kanker Serviks mari isi kolom di bawah ini')
-    col1,col2,col3,col4 = st.columns(4)
+    col1,col2 = st.columns(2)
     with col1:
-        behavior_sexualRisk = st.number_input('Silahkan Masukkan Perilaku Seksual Resiko :')
-        button = st.button('Detail', use_container_width = 500, type = 'primary')
-        if button:
-            if behavior_sexualRisk == 0:
-                st.write('Perilaku seksual berisiko pada kanker serviks dapat mencakup praktek-praktek yang meningkatkan risiko terpapar human papillomavirus (HPV), yang merupakan penyebab utama kanker serviks. Kolom ini dapat diisi dengan rentang 1-10.')
-            else:
-                st.write('SILAHKAN BACA DESKRIPSI')
+        behavior_sexualRisk = st.number_input('Silahkan Masukkan Perilaku Makan :')
         behavior_eating = st.number_input('Silahkan Masukkan behavior_eating :')
         behavior_personalHygine = st.number_input('Silahkan Masukkan behavior_personalHygine :')
         intention_aggregation = st.number_input('Silahkan Masukkan intention_aggregation :')
@@ -76,16 +70,8 @@ if (selected == 'Implementasi') :
         norm_significantPerson = st.number_input('Silahkan Masukkan norm_significantPerson :')
         norm_fulfillment = st.number_input('Silahkan Masukkan norm_fulfillment :')
         perception_vulnerability = st.number_input('Silahkan Masukkan perception_vulnerability :')
-    
-    with col2:
-        button = st.button('Detail', use_container_width = 500, type = 'primary')
-        if button:
-            if behavior_sexualRisk == 0:
-                st.write('Perilaku seksual berisiko pada kanker serviks dapat mencakup praktek-praktek yang meningkatkan risiko terpapar human papillomavirus (HPV), yang merupakan penyebab utama kanker serviks. Kolom ini dapat diisi dengan rentang 1-10.')
-            else:
-                st.write('SILAHKAN BACA DESKRIPSI')
 
-    with col3:
+    with col2:
         perception_severity = st.number_input('Silahkan Masukkan perception_severity :')
         motivation_strength = st.number_input('Silahkan Masukkan motivation_strength :')
         motivation_willingness = st.number_input('Silahkan Masukkan motivation_willingness :')
