@@ -70,19 +70,6 @@ if (selected == 'Implementasi') :
         norm_significantPerson = st.number_input('Silahkan Masukkan norm_significantPerson :')
         norm_fulfillment = st.number_input('Silahkan Masukkan norm_fulfillment :')
         perception_vulnerability = st.number_input('Silahkan Masukkan perception_vulnerability :')
-        on = st.toggle('Penjelasan')
-        if on:
-            st.write('1. behavior_sexualRisk (Perilaku Seksual Resiko) = Perilaku seksual berisiko pada kanker serviks dapat mencakup praktek-praktek yang meningkatkan risiko terpapar human papillomavirus (HPV), yang merupakan penyebab utama kanker serviks. HPV adalah virus yang ditularkan secara seksual, dan beberapa tindakan seksual tertentu dapat meningkatkan risiko paparan virus ini.')
-            st.write('2. behavior_eating (Perilaku Makan) = Perilaku makan pada kanker serviks dapat mencakup sejumlah faktor yang berkaitan dengan pola makan dan gaya hidup yang dapat memengaruhi risiko terjadinya atau perkembangan kanker serviks.')
-            st.write('3. behavior_personalHygine (Perilaku Kebersihan Pribadi) = Perilaku kebersihan pribadi atau personal hygiene yang baik dapat memainkan peran dalam mencegah infeksi HPV (Human Papillomavirus), yang merupakan penyebab utama kanker serviks.')
-            st.write('4. intention_aggregation (Agregasi Faktor Resiko) = Agregasi faktor risiko pada kanker serviks merujuk pada kecenderungan beberapa faktor risiko kanker serviks untuk terkumpul atau berkumpul pada individu tertentu. Ini berarti bahwa seseorang mungkin memiliki lebih dari satu faktor risiko yang dapat meningkatkan risiko mereka untuk mengembangkan kanker serviks.')
-            st.write('5. intention_commitment (Komitmen Niat) = Komitmen untuk pencegahan kanker serviks mencakup sikap atau keputusan untuk aktif terlibat dalam langkah-langkah pencegahan kanker serviks. Pencegahan kanker serviks melibatkan serangkaian tindakan yang dapat diambil oleh individu untuk mengurangi risiko terkena kanker serviks atau untuk mendeteksi kondisi tersebut pada tahap awal.')
-            st.write('6. attitude_consistency (Konsistensi Sikap) = Konsistensi sikap pada kanker serviks merujuk pada kesesuaian atau kecocokan antara sikap yang dimiliki oleh individu terhadap kanker serviks dan perilaku atau tindakan yang mereka tunjukkan sehubungan dengan pencegahan atau deteksi dini kanker serviks.')
-            st.write('7. attitude_spontaneity (Spontanitas Sikap) = Spontanitas sikap terkait kanker serviks merujuk pada sejauh mana sikap atau reaksi seseorang terhadap masalah kanker serviks muncul secara alami atau tanpa rangsangan atau pengaruh eksternal yang signifikan.')
-            st.write('8. norm_significantPerson (Norma Orang Penting) = Norma orang penting atau norma sosial pada kanker serviks merujuk pada harapan atau standar perilaku yang diterima oleh orang-orang di sekitar kita atau dalam kelompok sosial tertentu terkait dengan pencegahan atau deteksi dini kanker serviks.')
-            st.write('9. norm_fulfillment (Pemenuhan Norma) = Istilah pemenuhan norma pada kanker serviks dapat merujuk pada sejauh mana seseorang atau suatu kelompok mematuhi atau memenuhi norma-norma sosial atau ekspektasi yang ada terkait dengan pencegahan, deteksi dini, atau tindakan lainnya terkait kanker serviks.')
-            st.write('10. perception_vulnerability (Persepsi Kerentanan) = Persepsi kerentanan pada kanker serviks merujuk pada bagaimana seseorang menilai risiko atau rentan mereka terhadap pengembangan kanker serviks. Ini mencakup penilaian individu terhadap sejauh mana mereka merasa mungkin terpapar faktor risiko yang dapat menyebabkan kanker serviks.')
-           
 
     with col2:
         perception_severity = st.number_input('Silahkan Masukkan perception_severity :')
@@ -95,6 +82,30 @@ if (selected == 'Implementasi') :
         empowerment_abilities = st.number_input('Silahkan Masukkan empowerment_abilities :')
         empowerment_desires = st.number_input('Silahkan Masukkan empowerment_desires :')
 
+    on = st.toggle('Penjelasan')
+    if on:
+        st.write('1. behavior_sexualRisk (Perilaku Seksual Resiko) = Perilaku seksual berisiko pada kanker serviks dapat mencakup praktek-praktek yang meningkatkan risiko terpapar human papillomavirus (HPV), yang merupakan penyebab utama kanker serviks. HPV adalah virus yang ditularkan secara seksual, dan beberapa tindakan seksual tertentu dapat meningkatkan risiko paparan virus ini.')
+        st.write('2. behavior_eating (Perilaku Makan) = Perilaku makan pada kanker serviks dapat mencakup sejumlah faktor yang berkaitan dengan pola makan dan gaya hidup yang dapat memengaruhi risiko terjadinya atau perkembangan kanker serviks.')
+        st.write('3. behavior_personalHygine (Perilaku Kebersihan Pribadi) = Perilaku kebersihan pribadi atau personal hygiene yang baik dapat memainkan peran dalam mencegah infeksi HPV (Human Papillomavirus), yang merupakan penyebab utama kanker serviks.')
+        st.write('4. intention_aggregation (Agregasi Faktor Resiko) = Agregasi faktor risiko pada kanker serviks merujuk pada kecenderungan beberapa faktor risiko kanker serviks untuk terkumpul atau berkumpul pada individu tertentu. Ini berarti bahwa seseorang mungkin memiliki lebih dari satu faktor risiko yang dapat meningkatkan risiko mereka untuk mengembangkan kanker serviks.')
+        st.write('5. intention_commitment (Komitmen Niat) = Komitmen untuk pencegahan kanker serviks mencakup sikap atau keputusan untuk aktif terlibat dalam langkah-langkah pencegahan kanker serviks. Pencegahan kanker serviks melibatkan serangkaian tindakan yang dapat diambil oleh individu untuk mengurangi risiko terkena kanker serviks atau untuk mendeteksi kondisi tersebut pada tahap awal.')
+        st.write('6. attitude_consistency (Konsistensi Sikap) = Konsistensi sikap pada kanker serviks merujuk pada kesesuaian atau kecocokan antara sikap yang dimiliki oleh individu terhadap kanker serviks dan perilaku atau tindakan yang mereka tunjukkan sehubungan dengan pencegahan atau deteksi dini kanker serviks.')
+        st.write('7. attitude_spontaneity (Spontanitas Sikap) = Spontanitas sikap terkait kanker serviks merujuk pada sejauh mana sikap atau reaksi seseorang terhadap masalah kanker serviks muncul secara alami atau tanpa rangsangan atau pengaruh eksternal yang signifikan.')
+        st.write('8. norm_significantPerson (Norma Orang Penting) = Norma orang penting atau norma sosial pada kanker serviks merujuk pada harapan atau standar perilaku yang diterima oleh orang-orang di sekitar kita atau dalam kelompok sosial tertentu terkait dengan pencegahan atau deteksi dini kanker serviks.')
+        st.write('9. norm_fulfillment (Pemenuhan Norma) = Istilah pemenuhan norma pada kanker serviks dapat merujuk pada sejauh mana seseorang atau suatu kelompok mematuhi atau memenuhi norma-norma sosial atau ekspektasi yang ada terkait dengan pencegahan, deteksi dini, atau tindakan lainnya terkait kanker serviks.')
+        st.write('10. perception_vulnerability (Persepsi Kerentanan) = Persepsi kerentanan pada kanker serviks merujuk pada bagaimana seseorang menilai risiko atau rentan mereka terhadap pengembangan kanker serviks. Ini mencakup penilaian individu terhadap sejauh mana mereka merasa mungkin terpapar faktor risiko yang dapat menyebabkan kanker serviks.')
+        st.write('11. perception_severity (Persepsi Keparahan) = Persepsi keparahan pada kanker serviks merujuk pada bagaimana seseorang menilai tingkat keparahan atau seriusnya konsekuensi yang dapat terjadi akibat kanker serviks.')
+        st.write('12. motivation_strength (Kekuatan Motivasi) = Kekuatan motivasi pada kanker serviks merujuk pada intensitas atau tingkat dorongan internal yang mendorong individu untuk mengadopsi perilaku pencegahan atau deteksi dini terkait kanker serviks.')
+        st.write('13. motivation_willingness (Kemauan Motivasi) = Kemauan dan motivasi pada kanker serviks merujuk pada keinginan dan dorongan seseorang untuk mengambil langkah-langkah pencegahan atau deteksi dini terkait dengan kanker serviks.')
+        st.write('14. socialSupport_emotionality (Dukungan Sosial Emosionalitas) = Dukungan sosial emosionalitas pada kanker serviks merujuk pada bentuk dukungan sosial yang berkaitan dengan aspek emosional atau perasaan yang terlibat dalam menghadapi kanker serviks.')
+        st.write('15. socialSupport_appreciation (Apresiasi Dukungan Sosial) = Apresiasi dukungan sosial untuk kanker serviks mengacu pada penghargaan dan pemahaman terhadap peran positif dan kontribusi dari dukungan sosial yang diterima oleh individu yang mengalami kanker serviks. ')
+        st.write('16. socialSupport_instrumental (Dukungan Sosial Instrumental) = Dukungan sosial instrumental pada kanker serviks merujuk pada dukungan praktis atau tindakan nyata yang ditunjukkan oleh orang lain untuk membantu individu yang mengalami kanker serviks dalam situasi tertentu.')
+        st.write('17. empowerment_knowledge (Pengetahuan Pemberdayaan) = Pengetahuan pemberdayaan untuk pencegahan kanker serviks merujuk pada pemahaman dan pengetahuan yang memberdayakan individu atau komunitas untuk mengambil langkah-langkah pencegahan yang efektif terhadap kanker serviks.')
+        st.write('18. empowerment_abilities (Kemampuan Pemberdayaan) = Kemampuan pemberdayaan pada kanker serviks merujuk pada kapasitas individu atau komunitas untuk mengambil tindakan pencegahan atau mengelola risiko kanker serviks.')
+        st.write('19. empowerment_desires (Keinginan Pemberdayaan) = Keinginan pemberdayaan pada kanker serviks merujuk pada dorongan atau motivasi individu untuk mencari pengetahuan, keterampilan, dan sumber daya yang dapat memberdayakan mereka untuk mengambil langkah-langkah pencegahan atau mengelola risiko kanker serviks.')
+        st.write('20. ca_cervix (Deteksi Kanker Serviks) = ini adalah atribut kelas, yang dimana angka 1 adalah mengidap kanker serviks, dan angka 0 tidak ada kanker serviks')
+
+        
     button = st.button('Cek Deteksi Cervical Cancer', use_container_width = 500, type = 'primary')
 
     if button:
